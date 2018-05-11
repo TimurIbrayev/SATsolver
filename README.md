@@ -19,7 +19,7 @@ doc/                                          Documentation
 
 ## Usage
 
-1. Without RGR heuristic: mySAT <file name>
+1. Without RGR heuristic: mySAT \<file name\>
                  Example: mySAT benchmarks/uniform_random_3-sat/sat_50_218/01.cnf
 
 2. With RGR heuristic (default values): mySAT <file name> --enable_restarts
@@ -27,5 +27,3 @@ doc/                                          Documentation
 
 3. With RGR heuristic (user-defined values): mySAT <file name> --enable_restarts <k value>(integer) <a value>(float)
                                     Example: mySAT benchmarks/uniform_random_3-sat/sat_50_218/01.cnf --enable_restarts 90 1.4
-
-================================================================================
