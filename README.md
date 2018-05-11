@@ -1,9 +1,8 @@
-#Boolean Satisfiability Solver
+# Boolean Satisfiability Solver
 
 Authors: Timur Ibrayev, Nikhil Sunil Chhabria
 
-================================================================================
-Directory Overview
+## Directory Overview
 
 main.cpp                                      Main file
 data_types.h                                  SAT namespace definition
@@ -14,13 +13,11 @@ benchmarks/dimacs_benchmark_instances/aim/    Artificially generated Random 3-SA
 benchmarks/dimacs_benchmark_instances/phole/  Pigeon hole problem (3 instances, named 01.cnf, 02.cnf, and 03.cnf, all unsatisfiable)
 doc/                                          Documentation
 
-================================================================================
-Compilation
+## Compilation
 
-g++ main.cpp -o mySAT
+> g++ main.cpp -o mySAT
 
-================================================================================
-Usage
+## Usage
 
 1. Without RGR heuristic: mySAT <file name>
                  Example: mySAT benchmarks/uniform_random_3-sat/sat_50_218/01.cnf
