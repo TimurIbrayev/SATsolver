@@ -1,5 +1,4 @@
-# SATsolver
-Boolean Satisfiability Solver
+#Boolean Satisfiability Solver
 
 Authors: Timur Ibrayev, Nikhil Sunil Chhabria
 
