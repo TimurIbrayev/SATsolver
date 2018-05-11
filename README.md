@@ -2,18 +2,6 @@
 
 Authors: Timur Ibrayev, Nikhil Sunil Chhabria
 
-## Directory Overview
-|Directory|Description|
-|:----|:---|
-|main.cpp | Main file |
-|data_types.h | SAT namespace definition |
-|parse_cnf.h | Parser for input .cnf file |
-|sat_solver.h | DPLL algorithm with randomization and geometric restarts (RGR) heuristic |
-|benchmarks/uniform_random_3-sat/ | Uniform Random 3-SAT (each folder is named as sat/unsat_\<number of variables\>_\<number of clauses\>, <br> and has 3 instances, named 01.cnf, 02.cnf, and 03.cnf) |
-|benchmarks/dimacs_benchmark_instances/aim/ | Artificially generated Random 3-SAT (each folder is named as sat/unsat_\<number of variables\>_\<number of clauses\>, <br> and has 3 instances, named 01.cnf, 02.cnf, and 03.cnf) |
-|benchmarks/dimacs_benchmark_instances/phole/ | Pigeon hole problem (3 instances, <br> named 01.cnf, 02.cnf, and 03.cnf, all unsatisfiable) |
-|doc/ | Documentation |
-
 ## Compilation
 
 > g++ main.cpp -o mySAT
@@ -28,3 +16,15 @@ Authors: Timur Ibrayev, Nikhil Sunil Chhabria
 
 3. With RGR heuristic (user-defined values): ```mySAT <file name> --enable_restarts <k value>(integer) <a value>(float)```
     - Example: ```mySAT benchmarks/uniform_random_3-sat/sat_50_218/01.cnf --enable_restarts 90 1.4```
+
+## Directory Overview
+|Directory|Description|
+|:----|:---|
+|main.cpp | Main file |
+|data_types.h | SAT namespace definition |
+|parse_cnf.h | Parser for input .cnf file |
+|sat_solver.h | DPLL algorithm with randomization and geometric restarts (RGR) heuristic |
+|benchmarks/uniform_random_3-sat/ | Uniform Random 3-SAT (each folder is named as sat/unsat_\<number of variables\>_\<number of clauses\>, <br> and has 3 instances, named 01.cnf, 02.cnf, and 03.cnf) |
+|benchmarks/dimacs_benchmark_instances/aim/ | Artificially generated Random 3-SAT (each folder is named as sat/unsat_\<number of variables\>_\<number of clauses\>, <br> and has 3 instances, named 01.cnf, 02.cnf, and 03.cnf) |
+|benchmarks/dimacs_benchmark_instances/phole/ | Pigeon hole problem (3 instances, <br> named 01.cnf, 02.cnf, and 03.cnf, all unsatisfiable) |
+|doc/ | Documentation |
